@@ -1,0 +1,2 @@
+class LongUrlsController < ApplicationController
+end
