@@ -1,0 +1,16 @@
+<main class="home-container">
+  <h1>URL Shortener</h1>
+  <section class="home-section">
+    <% if user_signed_in? %>
+      <h4 class="username">Hi! <%= current_user.name.capitalize %> </h4>
+      <%= button_to 'Shorten Url', long_urls_path, method: :get, class: 'home-btn' %>
+    <% else %>
+      <h4 class="username">Welcome</h4>
+      <div class="buttons-div">
+        <%= button_to 'LOG IN', new_user_session_path, method: :get, class: 'home-btn devise-btn' %>
+        <%= button_to 'SIGN UP', new_user_registration_path, method: :get, class: 'home-btn devise-btn' %>
+      </div>
+    <% end %>
+    <%= render partial: "shared/sign_out" %>
+  </section>
+</main>
