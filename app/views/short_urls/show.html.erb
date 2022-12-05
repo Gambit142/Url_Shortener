@@ -1,0 +1,4 @@
+<main class="container">
+  <p class="output">Click the link below to visit site</p>
+  <%= link_to "#{@short_url.url}", redirect_url_path(@short_url.url), target: "_blank", class: 'links url-link' %>
+</main>

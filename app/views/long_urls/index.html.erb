@@ -1,0 +1,20 @@
+<main class="container">
+  <%= form_tag "/short_urls", data: {controller: 'url', url_alias_count_value: 16, url_over_limit_class: 'warning-text'} do %>
+    <div class="field input-div">
+      <%= label_tag :url, 'Enter Url' %>
+      <p class="format">(Format: https://...)</p>
+      <%= text_field_tag :url, '', class: 'text-input' %>
+    </div>
+    <%= fields_for :short_url do |f| %>
+      <div class="field input-div">
+        <%= f.label :alias, 'Create Custom Endpoint' %>
+        <%= f.text_field :alias, class: 'text-input', data: {url_target: 'aliasField', action: "keyup->url#change"} %>
+        <p data-url-target="maximumAliasOutput" class="output"></p>
+      </div>
+    <% end %>
+    <div class="submit-btn-div">
+      <%= submit_tag 'Shorten Url' %>
+    </div>
+  <% end %>
+  <%= render partial: "shared/sign_out" %>
+</main>
