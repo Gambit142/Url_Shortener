@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+
+/* Import Fonts to be used */
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --light-purple: #d0b5de;
+  --kdam: 'Kdam Thmor Pro', sans-serif;
+  --flex: flex;
+  --column: column;
+  --monospace: monospace;
+  --dark-purple: #2c0440;
+  --center: center;
+}
+
+body {
+  background-image: url('application_background');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.notice, .success, .alert {
+  color: #fff;
+  font-family: monospace;
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
