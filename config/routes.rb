@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :long_urls, only: [:show]
   resources :short_urls, only: [:create]
 
