@@ -177,7 +177,7 @@ To run the project, execute the following command:
 
 - [ ] **Have a way to get the metrics of most clicked links and other metrics**
 - [ ] **Use CanCanCan for Authorization so that users can only see shortened urls they created**
-- [ ] **Set duration for how long alink is valid**
+- [ ] **Set duration for how long a link is valid**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
