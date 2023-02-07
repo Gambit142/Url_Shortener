@@ -50,8 +50,6 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 URL SHORTENER <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **URL SHORTENER** is an application that that allows you to enter a long URL and receive a shortened version in return. It is convenient it looks streamlined in appearance. You can also create your custom endpoint.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -85,7 +83,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **It shortens long urls and returns a short one**
 - **Users can create their custom endpoint (shortened url)**
@@ -97,8 +94,6 @@ After you're finished please remove all the comments and instructions!
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
-> Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
 
@@ -159,8 +154,6 @@ To run the project, execute the following command:
 <!-- AUTHORS -->
 
 ## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
 
 👤 **Author**
 
